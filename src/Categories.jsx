@@ -1,5 +1,6 @@
-// CategoriesPage.js
+
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import CategoryCard from './CategoryCard';
 
 const CategoriesPage = () => {
@@ -17,7 +18,9 @@ const CategoriesPage = () => {
       <h1>Categories</h1>
       <div className="category-list">
         {categories.map(category => (
-          <CategoryCard key={category._id} category={category} />
+          <Link key={category._id} to={`/categories/${category._id}`}>
+            <CategoryCard category={category} />
+          </Link>
         ))}
       </div>
     </div>

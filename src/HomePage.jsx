@@ -15,7 +15,10 @@ const HomePage = () => {
 
   return (
     <div>
-      <Navbar />
+   
+    
+    
+    
       <h1>Welcome to Our Store!</h1>
       <Categories categories={categories} />
     </div>

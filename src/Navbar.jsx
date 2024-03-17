@@ -1,26 +1,24 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './Navbar.module.css';
+import { Navbar, Nav } from 'react-bootstrap';
 
-const Navbar = () => {
+const NavigationBar = () => {
   return (
-    <nav className={styles.navbar}>
-      <Link to="/" className={styles.logo}></Link>
-      <ul className={styles['navbar-links']}> 
-      <li><Link to="/login">Login</Link></li>
-        <li><Link to="/register">Register</Link></li>
-        <li><Link to="/Homepage">Categories</Link></li>
-        <li><Link to="/products">Products</Link></li>
-        <li><Link to="/cart">Cart</Link></li>
-      </ul>
-      <div className={styles['user-section']}> 
-        <input type="text" className={styles['search-input']} placeholder="Search" /> 
-        <div className={styles['user-avatar']}></div> 
-        <span className={styles['user-name']}></span> 
-      </div>
-    </nav>
+    <Navbar bg="dark" variant="dark" expand="lg">
+      <Navbar.Brand as={Link} to="/">E-Commerce</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mr-auto">
+          <Nav.Link as={Link} to="/categories">Categories</Nav.Link>
+          <Nav.Link as={Link} to="/products">Products</Nav.Link>
+          <Nav.Link as={Link} to="/cart">Cart</Nav.Link>
+          <Nav.Link as={Link} to="/order">Orders</Nav.Link>
+          <Nav.Link as={Link} to="/user/profile">Profile</Nav.Link>
+          {/* Add other links as needed */}
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 }
 
-export default Navbar;
+export default NavigationBar;

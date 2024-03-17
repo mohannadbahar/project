@@ -9,7 +9,7 @@ function RemoveCartItem() {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:3000/cart/removeItem', {
+      const response = await fetch('https://ecommerce-node4.vercel.app/cart/removeItem', {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

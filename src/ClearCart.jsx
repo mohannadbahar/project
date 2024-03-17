@@ -6,7 +6,7 @@ function ClearCart() {
 
   const handleClearCart = async () => {
     try {
-      const response = await fetch('http://localhost:3000/cart/clear', {
+      const response = await fetch('https://ecommerce-node4.vercel.app/cart/clear', {
         method: 'PATCH',
         headers: {
           'Authorization': 'Tariq__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NmZlYTk4Y2FmNDlmODJiM2IxNGRjNSIsInJvbGUiOiJVc2VyIiwic3RhdHVzIjoiQWN0aXZlIiwiaWF0IjoxNzAxODkxNjYwfQ.-XlhcCILJvhSasCl7HohQvFezIIERupfJtKvnCeEaF8',

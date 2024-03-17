@@ -16,7 +16,7 @@ function CreateSubcategoryForm() {
     formData.append('categoryId', categoryId);
 
     try {
-      const response = await fetch('http://localhost:3000/subcategory', {
+      const response = await fetch('https://ecommerce-node4.vercel.app/subcategory', {
         method: 'POST',
         body: formData,
       });

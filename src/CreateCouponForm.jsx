@@ -11,7 +11,7 @@ function CreateCouponForm() {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:3000/coupon', {
+      const response = await fetch('https://ecommerce-node4.vercel.app/coupon', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

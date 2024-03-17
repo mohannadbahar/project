@@ -6,7 +6,7 @@ function CancelOrder({ orderId, authToken }) {
 
   const handleCancelOrder = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/order/cancel/${orderId}`, {
+      const response = await fetch(`https://ecommerce-node4.vercel.app/order/cancel/${orderId}`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

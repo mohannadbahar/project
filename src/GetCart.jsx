@@ -8,7 +8,7 @@ function GetCart() {
   useEffect(() => {
     const fetchCartItems = async () => {
       try {
-        const response = await fetch('http://localhost:3000/cart', {
+        const response = await fetch('https://ecommerce-node4.vercel.app/cart', {
           headers: {
             'Authorization': 'Tariq__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NmZlYTk4Y2FmNDlmODJiM2IxNGRjNSIsInJvbGUiOiJVc2VyIiwic3RhdHVzIjoiQWN0aXZlIiwiaWF0IjoxNzAyMjU2NDU4fQ.HE5CSCxRVvYKCqGK7fHGudNSdQdEMKTg6YrnoEtWU7Q',
           },

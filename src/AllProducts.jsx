@@ -8,7 +8,7 @@ function AllProducts() {
   useEffect(() => {
     const fetchAllProducts = async () => {
       try {
-        const response = await fetch('http://localhost:3000/products?page=1&limit=10');
+        const response = await fetch('https://ecommerce-node4.vercel.app/products?page=1&limit=10');
 
         if (!response.ok) {
           throw new Error('Failed to fetch products');

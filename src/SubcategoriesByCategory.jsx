@@ -8,7 +8,7 @@ function SubcategoriesByCategory({ categoryId }) {
   useEffect(() => {
     const fetchSubcategoriesByCategory = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/categories/${categoryId}/subcategory`);
+        const response = await fetch(`https://ecommerce-node4.vercel.app/categories/${categoryId}/subcategory`);
 
         if (!response.ok) {
           throw new Error('Failed to fetch subcategories by category');

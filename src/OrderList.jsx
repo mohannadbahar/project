@@ -8,7 +8,7 @@ function OrderList({ authToken }) {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await fetch('http://localhost:3000/order', {
+        const response = await fetch('https://ecommerce-node4.vercel.app/order', {
           headers: {
             'Authorization': authToken,
           },

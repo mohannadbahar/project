@@ -8,7 +8,7 @@ function UserProfile({ authToken }) {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const response = await fetch('{{url}}/user/profile', {
+        const response = await fetch('https://ecommerce-node4.vercel.app/user/profile', {
           headers: {
             'Authorization': authToken,
           },

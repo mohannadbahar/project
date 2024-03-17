@@ -9,7 +9,7 @@ function CreateCartEntry() {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:3000/cart', {
+      const response = await fetch('https://ecommerce-node4.vercel.app/cart', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

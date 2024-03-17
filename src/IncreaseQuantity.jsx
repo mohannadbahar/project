@@ -7,7 +7,7 @@ function IncreaseQuantity() {
 
   const handleIncreaseQuantity = async () => {
     try {
-      const response = await fetch('http://localhost:3000/cart/increaseQuantity', {
+      const response = await fetch('https://ecommerce-node4.vercel.app/cart/increaseQuantity', {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

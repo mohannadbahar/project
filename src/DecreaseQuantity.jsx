@@ -7,7 +7,7 @@ function DecreaseQuantity() {
 
   const handleDecreaseQuantity = async () => {
     try {
-      const response = await fetch('http://localhost:3000/cart/decreaseQuantity', {
+      const response = await fetch('https://ecommerce-node4.vercel.app/cart/decreaseQuantity', {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

@@ -11,7 +11,7 @@ function CreateReview({ authToken }) {
     setLoading(true);
 
     try {
-      const response = await fetch('http://localhost:3000/products/656afed9415e5e5f8d84871f/review', {
+      const response = await fetch('https://ecommerce-node4.vercel.app/products/656afed9415e5e5f8d84871f/review', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
